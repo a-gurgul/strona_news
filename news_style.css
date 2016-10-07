@@ -125,8 +125,9 @@ a
 #search input:focus
 {
 	border: 3px solid #555;
-	height: 36px;
-	width: 255px;
+	min-height: 30px;
+	max-height: 34px;
+	width: 210px;
 	box-sizing: border-box;
 }
 
@@ -135,9 +136,8 @@ a
 	float: left;
 	max-height: 28px;
 	min-height: 25px;
-	width: 250px;
+	width: 210px;
 	display: inline-block;
-	position: relative;
 	box-sizing: content-box;
 	border:1px solid #000;
 	max-height: 100%;
@@ -151,10 +151,8 @@ a
 	display: inline-block;
 	height: 28px;
 	width: 32px;
-	position: absolute;
-	right:200px;
-	top: 95px;
 	z-index: 2;
+	border: 1px solid #000;
 }
 
 #search span img
@@ -186,12 +184,12 @@ nav ul li
 	font-family: 'Oswald', sans-serif;
 	font-size: 1.6em;
 	line-height: 45px;
-	padding-right: 22px;
+	padding:0 11px;
 }
 
-#main_nav ul li:last-child > a
+#main_nav ul li:hover > a
 {
-	padding-right: 0;
+	background-color: #cf0000;
 }
 
 #content
@@ -270,6 +268,11 @@ aside
 	height: 67px;
 	margin: 0 0 8px 0;
 	padding: 0;
+}
+
+#photos_column figure:hover
+{
+	cursor: pointer;
 }
 
 #photos_column figure > img
@@ -520,6 +523,48 @@ h3
 	font-weight: bold;
 }
 
+.button_top
+{
+	background-color: #cf0000;
+	width: 70px;
+	height: 30px;
+	padding: 5px;
+	border:none;
+	cursor: pointer;
+}
+
+.button_top span
+{
+	color: #fff;
+	font-variant: small-caps;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.top
+{
+	display: inline-block;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+.top h1
+{
+	float: left;
+	border:none;
+	width: 380px;
+	z-index: 1;
+}
+
+.top button
+{
+	float: left;
+	margin: 0;
+	z-index: 5;
+	margin-top: 24px;
+}
+
 .button_after
 {
 	background-color: #cf0000;
@@ -553,6 +598,61 @@ h3
 	width: 100%;
 }
 
+#advert_subscribe
+{
+	width: 250px;
+	margin-top: 20px;
+}
+
+#newsletter
+{
+	background-color: #e4e4e4;
+	width: 220px;
+	margin:20px 0;
+	padding: 15px;
+	color: #000;
+}
+
+#newsletter h1
+{
+	font-weight: bold;
+	font-variant: small-caps;
+	font-size: 1.7em;
+	font-family: 'Oswald', sans-serif;
+	font-stretch: 2px;
+	display: block;
+	padding: 0;
+	margin: 0 0 5px 0;
+}
+
+#newsletter input
+{
+	border:1px solid #000;
+	height: 30px;
+	box-sizing: border-box;
+	width: 220px;
+	margin-top: 10px;
+}
+
+#newsletter input[type=submit]
+{
+
+	width: 100px;
+	margin: 10px auto;
+	font-size: 1.2em;
+	font-family: "Oswald",sans-serif;
+	color: #fff;
+	background-color: #cf0000;
+	font-stretch: 1px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#after_submit_text
+{
+	color: #cf0000;
+}
+
 footer
 {
 	height: 100px;
@@ -566,6 +666,12 @@ footer
 	color: #000;
 	display: inline-block;
 	padding:5px 10px;
+	border-right: 1px dotted #000;
+}
+
+#bottom_menu li:last-child > a
+{
+	border-right: none;
 }
 
 #bottom_footer
